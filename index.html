@@ -194,6 +194,53 @@ p:last-child{margin-bottom:0;}
 .f-policy{font-size:10px;color:rgba(255,255,255,0.28);line-height:1.8;max-width:520px;text-align:right;}
 @media(max-width:1024px){.intro-inner{grid-template-columns:320px 1fr;gap:52px;}.footer-grid{grid-template-columns:1fr 1fr;gap:36px;}.history-inner{grid-template-columns:1fr;gap:40px;}.h-divider{display:none;}}
 @media(max-width:768px){.nav-links{display:none;}.nav-inner{height:60px;}.hero{height:80vh;}.hero-content{padding:40px 24px 0;}.intro-inner{grid-template-columns:1fr;gap:40px;}.services-grid,.appts-grid,.test-grid{grid-template-columns:1fr;gap:14px;}.why-grid{grid-template-columns:1fr;gap:24px;}.partners-inner{flex-direction:column;align-items:flex-start;gap:20px;}.p-divider{display:none;}.contact-inner{grid-template-columns:1fr;gap:40px;}.footer-grid{grid-template-columns:1fr;gap:32px;}.f-bottom{flex-direction:column;}.f-policy{text-align:left;}.trust-inner{flex-wrap:wrap;}.trust-item{flex:none;width:50%;border-left:none;border-top:1px solid rgba(255,255,255,0.08);padding:11px 16px;justify-content:flex-start;}.trust-item:nth-child(even){border-left:1px solid rgba(255,255,255,0.08);}}
+
+/* NAV DROPDOWN */
+.nav-dropdown { position: relative; }
+.nav-dropdown-trigger { cursor: pointer; }
+.nav-dropdown-trigger span { font-size: 8px; margin-left: 3px; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(28,43,74,0.12);
+  min-width: 240px;
+  z-index: 300;
+  padding: 8px 0;
+}
+.dropdown-menu li { list-style: none; margin: 0; }
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-menu li a::after { display: none; }
+.dropdown-menu li a:hover { background: var(--ivory); color: var(--blush); }
+.nav-dropdown:hover .dropdown-menu { display: block; }
+/* Small triangle pointer */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: var(--white);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  transform: translateX(-50%) rotate(45deg);
+}
 </style>
 </head>
 <body>
