@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bridal Gown Alterations Sacramento | Keepsakes Bridal</title>
-<meta name="description" content="Expert bridal gown alterations in Rancho Cordova and Greater Sacramento. FIDM graduate Carla Westerbeck. Free consultation. Serving brides since 1994.">
+<meta name="description" content="Expert bridal gown alterations in Rancho Cordova and Greater Sacramento. FIDM graduate Carla Westerbeck. Free consultation.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#1C2B4A;--blush:#C9A79D;--blush-light:#EDD9D4;--mauve:#9E8E8A;--ivory:#FAF7F5;--white:#FFFFFF;--text-dark:#1a1a1a;--text-mid:#555555;--border:rgba(158,142,138,0.2);--max-w:1200px;}
@@ -31,53 +31,61 @@ p:last-child{margin-bottom:0;}
 .btn-blush:hover{background:var(--navy);transform:translateY(-2px);}
 .btn-outline-white{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,0.5);}
 .btn-outline-white:hover{background:var(--white);color:var(--navy);}
+/* ANNOUNCEMENT */
 .announcement-bar{background:var(--navy);color:rgba(255,255,255,0.85);text-align:center;padding:11px 20px;font-size:11px;font-weight:500;letter-spacing:0.07em;}
 .announcement-bar a{color:var(--blush);text-decoration:underline;}
+/* NAV */
 .nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200;box-shadow:0 2px 20px rgba(28,43,74,0.05);}
 .nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 40px;height:80px;display:flex;align-items:center;justify-content:space-between;}
 .nav-logo{display:flex;flex-direction:column;align-items:flex-start;gap:2px;}
 .nav-logo .logo-script{font-family:'Great Vibes',cursive;font-size:2rem;color:var(--navy);line-height:1;white-space:nowrap;}
 .nav-logo .logo-sub{font-size:8px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--mauve);white-space:nowrap;}
 .nav-links{display:flex;align-items:center;gap:28px;margin-left:auto;padding-left:32px;}
+.nav-links>li{position:relative;}
 .nav-links a{font-size:10px;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:var(--navy);transition:color 0.2s;white-space:nowrap;position:relative;}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--blush);transition:width 0.3s;}
 .nav-links a:hover{color:var(--blush);}
 .nav-links a:hover::after{width:100%;}
-.nav-cta{background:var(--blush);color:var(--white) !important;padding:9px 20px;}
-.nav-cta:hover{background:var(--navy) !important;}
+.nav-cta{background:var(--blush) !important;color:var(--white) !important;padding:9px 20px;display:inline-block;}
+.nav-cta:hover{background:var(--navy) !important;color:var(--white) !important;}
 .nav-cta::after{display:none !important;}
-.nav-dropdown{position:relative;}
-.dropdown-menu{display:none;position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%);background:var(--white);border:1px solid var(--border);box-shadow:0 8px 32px rgba(28,43,74,0.12);min-width:240px;z-index:300;padding:8px 0;}
-.dropdown-menu li a{display:block;padding:10px 20px;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);white-space:nowrap;}
-.dropdown-menu li a::after{display:none;}
-.dropdown-menu li a:hover{background:var(--ivory);color:var(--blush);}
-.nav-dropdown:hover .dropdown-menu{display:block;}
+/* DROPDOWN - JS controlled, no CSS hover */
+.dropdown-menu{display:none;position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);background:var(--white);border:1px solid var(--border);box-shadow:0 8px 32px rgba(28,43,74,0.12);min-width:250px;z-index:300;padding:8px 0;}
 .dropdown-menu::before{content:'';position:absolute;top:-6px;left:50%;width:10px;height:10px;background:var(--white);border-left:1px solid var(--border);border-top:1px solid var(--border);transform:translateX(-50%) rotate(45deg);}
+.dropdown-menu li a{display:block;padding:11px 22px;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);white-space:nowrap;transition:background 0.15s,color 0.15s;}
+.dropdown-menu li a::after{display:none !important;}
+.dropdown-menu li a:hover{background:var(--ivory);color:var(--blush);}
+/* PAGE HERO */
 .page-hero{background:linear-gradient(135deg,var(--navy) 0%,#243662 100%);padding:80px 0 100px;position:relative;overflow:hidden;}
 .page-hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;background:var(--white);clip-path:ellipse(55% 100% at 50% 100%);}
 .page-hero-inner{max-width:var(--max-w);margin:0 auto;padding:0 40px;position:relative;z-index:2;}
 .page-hero .section-label{color:var(--blush);}
 .page-hero h1{color:var(--white);margin-bottom:16px;}
 .page-hero p{color:rgba(255,255,255,0.7);max-width:600px;font-size:1.05rem;}
+/* CONTENT */
 .content-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
 .svc-photo{width:100%;height:420px;object-fit:cover;display:block;}
-.gallery-cta-wrap{margin-top:20px;display:flex;align-items:center;gap:16px;}
+.gallery-cta-wrap{margin-top:16px;display:flex;align-items:center;gap:16px;}
 .gallery-cta-wrap span{font-size:10px;color:var(--mauve);font-style:italic;}
+/* PROCESS */
 .process{background:var(--ivory);}
 .process-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;}
 .process-step{text-align:center;padding:40px 24px;}
 .step-num{font-family:'Great Vibes',cursive;font-size:4rem;color:var(--blush-light);display:block;line-height:1;margin-bottom:12px;}
 .process-step h3{margin-bottom:12px;font-size:0.95rem;letter-spacing:0.06em;text-transform:uppercase;}
 .process-step p{font-size:0.9rem;}
+/* FAQ */
 .faq-list{max-width:800px;margin:0 auto;}
 .faq-item{border-bottom:1px solid var(--border);padding:28px 0;}
 .faq-item:last-child{border-bottom:none;}
 .faq-q{font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:12px;}
 .faq-a{font-size:0.93rem;color:var(--text-mid);line-height:1.9;}
+/* CTA BAND */
 .cta-band{background:linear-gradient(135deg,var(--navy) 0%,#243662 100%);padding:72px 0;text-align:center;}
 .cta-band h2{color:var(--white);margin-bottom:16px;}
 .cta-band p{color:rgba(255,255,255,0.65);max-width:520px;margin:0 auto 32px;}
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+/* SERVICES GRID */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 .svc-card{display:block;background:var(--ivory);padding:40px 32px;border-bottom:2px solid transparent;transition:all 0.3s;}
 .svc-card:hover{transform:translateY(-4px);box-shadow:0 20px 56px rgba(28,43,74,0.09);border-bottom-color:var(--blush);background:var(--white);}
@@ -85,7 +93,7 @@ p:last-child{margin-bottom:0;}
 .svc-card h3{font-size:0.88rem;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:12px;color:var(--navy);}
 .svc-card p{font-size:0.87rem;line-height:1.85;color:var(--text-mid);}
 .svc-link{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blush);}
-/* GALLERY PAGE */
+/* GALLERY */
 .gallery-grid{columns:3;column-gap:14px;}
 .gallery-item{break-inside:avoid;margin-bottom:14px;overflow:hidden;cursor:pointer;position:relative;background:var(--ivory);}
 .gallery-item img{width:100%;height:auto;display:block;transition:transform 0.4s ease;}
@@ -94,15 +102,17 @@ p:last-child{margin-bottom:0;}
 .gallery-item:hover .gallery-overlay{background:rgba(28,43,74,0.25);}
 .gallery-overlay svg{opacity:0;transition:opacity 0.3s;color:var(--white);}
 .gallery-item:hover .gallery-overlay svg{opacity:1;}
+/* LIGHTBOX */
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.93);z-index:1000;align-items:center;justify-content:center;padding:40px;}
 .lightbox.open{display:flex;}
 .lightbox-img{max-width:90vw;max-height:88vh;object-fit:contain;}
-.lb-close{position:absolute;top:20px;right:28px;color:rgba(255,255,255,0.7);font-size:36px;cursor:pointer;background:none;border:none;line-height:1;}
+.lb-close{position:absolute;top:20px;right:28px;color:rgba(255,255,255,0.7);font-size:36px;cursor:pointer;background:none;border:none;line-height:1;font-family:sans-serif;}
 .lb-close:hover{color:var(--white);}
 .lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%);color:rgba(255,255,255,0.7);font-size:48px;cursor:pointer;padding:16px;background:none;border:none;line-height:1;}
 .lb-prev{left:8px;}
 .lb-next{right:8px;}
 .lb-prev:hover,.lb-next:hover{color:var(--white);}
+/* FOOTER */
 .site-footer{background:linear-gradient(165deg,var(--navy) 0%,#1a2844 100%);padding:80px 0 48px;}
 .footer-grid{max-width:var(--max-w);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;}
 .f-brand .f-script{font-family:'Great Vibes',cursive;font-size:2.2rem;color:var(--white);display:block;margin-bottom:4px;}
@@ -122,32 +132,56 @@ p:last-child{margin-bottom:0;}
 .f-bottom{max-width:var(--max-w);margin:36px auto 0;padding:28px 40px 0;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;}
 .f-copy{font-size:10px;color:rgba(255,255,255,0.28);line-height:1.7;}
 .f-policy{font-size:10px;color:rgba(255,255,255,0.28);line-height:1.8;max-width:520px;text-align:right;}
-@media(max-width:1024px){.content-grid{grid-template-columns:1fr;gap:40px;}.gallery-grid{columns:2;}.footer-grid{grid-template-columns:1fr 1fr;gap:36px;}.process-steps{grid-template-columns:1fr 1fr;}.svc-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:768px){.nav-links{display:none;}.nav-inner{height:60px;}.page-hero{padding:60px 0 80px;}.container{padding:0 20px;}.gallery-grid{columns:2;column-gap:10px;}.gallery-item{margin-bottom:10px;}.svc-grid{grid-template-columns:1fr;}.process-steps{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;gap:32px;padding:0 20px;}.f-bottom{flex-direction:column;padding:20px 20px 0;}.f-policy{text-align:left;}.f-areas-wrap{padding:20px 20px 0;}.lb-prev,.lb-next{display:none;}}
+@media(max-width:1024px){.content-grid{grid-template-columns:1fr;gap:40px;}.footer-grid{grid-template-columns:1fr 1fr;gap:36px;}.process-steps{grid-template-columns:1fr 1fr;}.svc-grid{grid-template-columns:1fr 1fr;}.gallery-grid{columns:2;}}
+@media(max-width:768px){.nav-links{display:none;}.nav-inner{height:60px;}.page-hero{padding:60px 0 80px;}.container{padding:0 20px;}.svc-grid,.process-steps{grid-template-columns:1fr;}.gallery-grid{columns:2;column-gap:10px;}.gallery-item{margin-bottom:10px;}.footer-grid{grid-template-columns:1fr;gap:32px;padding:0 20px;}.f-bottom{flex-direction:column;padding:20px 20px 0;}.f-policy{text-align:left;}.f-areas-wrap{padding:20px 20px 0;}.lb-prev,.lb-next{display:none;}}
 @media(max-width:480px){.gallery-grid{columns:1;}}
 </style>
 </head>
 <body>
 <div class="announcement-bar">Now accepting new bridal clients &mdash; <a href="/#contact">Free consultation, no commitment</a></div>
-<nav class="nav"><div class="nav-inner">
-  <a href="/" class="nav-logo"><span class="logo-script">Keepsakes Bridal</span><span class="logo-sub">Alterations &amp; Custom Designs</span></a>
-  <ul class="nav-links">
-    <li class="nav-dropdown"><a href="/services" class="nav-dropdown-trigger">Services &#9660;</a>
-      <ul class="dropdown-menu">
-        <li><a href="/bridal-alterations">Bridal Gown Alterations</a></li>
-        <li><a href="/preservation">Wedding Gown Preservation</a></li>
-        <li><a href="/heirloom-redesign">Heirloom Redesign</a></li>
-        <li><a href="/custom-formal">Custom Formal Wear</a></li>
-        <li><a href="/accessories">Custom Lingerie &amp; Accessories</a></li>
-        <li><a href="/formalwear">Formalwear &amp; Steaming</a></li>
-      </ul>
-    </li>
-    <li><a href="/about">About Carla</a></li>
-    <li><a href="/gallery">Our Work</a></li>
-    <li><a href="https://share.google/3UHxo2702ajDtmBLe" target="_blank" rel="noopener">Reviews</a></li>
-    <li><a href="/#contact" class="nav-cta">Contact Carla</a></li>
-  </ul>
-</div></nav>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="logo-script">Keepsakes Bridal</span>
+      <span class="logo-sub">Alterations &amp; Custom Designs</span>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-dropdown" id="svcDropdown">
+        <a href="/services" class="nav-dropdown-trigger" onclick="return false;">Services &#9660;</a>
+        <ul class="dropdown-menu" id="svcMenu">
+          <li><a href="/bridal-alterations">Bridal Gown Alterations</a></li>
+          <li><a href="/preservation">Wedding Gown Preservation</a></li>
+          <li><a href="/heirloom-redesign">Heirloom Redesign</a></li>
+          <li><a href="/custom-formal">Custom Formal Wear</a></li>
+          <li><a href="/accessories">Custom Lingerie &amp; Accessories</a></li>
+          <li><a href="/formalwear">Formalwear &amp; Steaming</a></li>
+        </ul>
+      </li>
+      <li><a href="/about">About Carla</a></li>
+      <li><a href="/gallery">Our Work</a></li>
+      <li><a href="https://share.google/3UHxo2702ajDtmBLe" target="_blank" rel="noopener">Reviews</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact Carla</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+(function(){
+  var dd = document.getElementById('svcDropdown');
+  var menu = document.getElementById('svcMenu');
+  var timer;
+  if(!dd||!menu) return;
+  function show(){clearTimeout(timer);menu.style.display='block';}
+  function hide(){timer=setTimeout(function(){menu.style.display='none';},300);}
+  dd.addEventListener('mouseenter',show);
+  dd.addEventListener('mouseleave',hide);
+  menu.addEventListener('mouseenter',show);
+  menu.addEventListener('mouseleave',hide);
+  dd.querySelector('.nav-dropdown-trigger').addEventListener('click',function(e){
+    e.preventDefault();
+    menu.style.display = menu.style.display==='block' ? 'none' : 'block';
+  });
+})();
+</script>
 
 <section class="page-hero">
   <div class="page-hero-inner">
@@ -169,7 +203,7 @@ p:last-child{margin-bottom:0;}
         </div>
       </div>
       <div>
-        <img src="/20231021_175252000_iOS.jpg" alt="Bridal gown alteration work by Carla Westerbeck at Keepsakes Bridal Sacramento" class="svc-photo">
+        <img src="/20231021_175252000_iOS.jpg" alt="Bridal gown alteration by Carla Westerbeck Keepsakes Bridal Sacramento" class="svc-photo" onerror="this.style.display='none'">
         <div class="gallery-cta-wrap">
           <a href="/gallery" class="btn btn-outline" style="padding:10px 24px;font-size:10px;">View Our Full Gallery &rarr;</a>
           <span>See more of Carla&rsquo;s work</span>
@@ -188,7 +222,7 @@ p:last-child{margin-bottom:0;}
   <div class="container" style="text-align:center;max-width:580px;margin-bottom:60px;">
     <span class="section-label">Common Questions</span><h2>Frequently Asked Questions</h2>
   </div>
-  <div class="container"><div class="faq-list"><div class="faq-item"><div class="faq-q">How far in advance should I book?</div><div class="faq-a">Three to four months before your wedding date is ideal. That said, Carla will always do her best to accommodate shorter timelines when possible.</div></div><div class="faq-item"><div class="faq-q">Do you charge a fitting fee?</div><div class="faq-a">No. Your initial consultation at Keepsakes Bridal is always free. Carla will assess your gown and provide a full quote before anything begins.</div></div><div class="faq-item"><div class="faq-q">What should I bring to my first appointment?</div><div class="faq-a">Bring your gown, your shoes if you have them, and any shapewear or undergarments you plan to wear on the day.</div></div><div class="faq-item"><div class="faq-q">How many fittings will I need?</div><div class="faq-a">Most brides require two to three fittings depending on the complexity of the alterations.</div></div></div></div>
+  <div class="container"><div class="faq-list"><div class="faq-item"><div class="faq-q">How far in advance should I book?</div><div class="faq-a">Three to four months before your wedding date is ideal. Carla will always do her best to accommodate shorter timelines when possible.</div></div><div class="faq-item"><div class="faq-q">Do you charge a fitting fee?</div><div class="faq-a">No. Your initial consultation is always free. Carla will assess your gown and provide a full quote before anything begins.</div></div><div class="faq-item"><div class="faq-q">What should I bring to my first appointment?</div><div class="faq-a">Bring your gown, your shoes if you have them, and any shapewear or undergarments you plan to wear on the day.</div></div><div class="faq-item"><div class="faq-q">How many fittings will I need?</div><div class="faq-a">Most brides require two to three fittings depending on the complexity of the alterations.</div></div></div></div>
 </section>
 <section class="cta-band">
   <h2>Ready to Get Started?</h2>
@@ -198,20 +232,51 @@ p:last-child{margin-bottom:0;}
     <a href="/gallery" class="btn btn-outline-white">View Our Work</a>
   </div>
 </section>
-<footer class="site-footer"><div class="footer-grid">
-  <div class="f-brand"><span class="f-script">Keepsakes Bridal</span><span class="f-sub">Alterations &amp; Custom Designs &middot; Est. 1994</span>
-    <p>Expert bridal gown alterations, preservation, heirloom redesigns and custom couture in the Greater Sacramento Area. FIDM graduate Carla Westerbeck, owner. Serving brides since 1994.</p>
-    <div class="f-socials"><a href="https://www.instagram.com/keepsakesbridal_sac/" class="f-social" target="_blank" rel="noopener">@keepsakesbridal_sac</a><a href="https://www.instagram.com/carlareneecouture/" class="f-social" target="_blank" rel="noopener">@carlareneecouture</a></div>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="f-brand">
+      <span class="f-script">Keepsakes Bridal</span>
+      <span class="f-sub">Alterations &amp; Custom Designs &middot; Est. 1994 &middot; Carla Renee Couture</span>
+      <p>Expert bridal gown alterations, wedding dress preservation, heirloom redesigns, and custom couture in the Greater Sacramento Area. FIDM graduate Carla Westerbeck, owner. Serving Sacramento brides since 1994.</p>
+      <div class="f-socials">
+        <a href="https://www.instagram.com/keepsakesbridal_sac/" class="f-social" target="_blank" rel="noopener">@keepsakesbridal_sac</a>
+        <a href="https://www.instagram.com/carlareneecouture/" class="f-social" target="_blank" rel="noopener">@carlareneecouture</a>
+      </div>
+    </div>
+    <div class="f-col"><h4>Services</h4><ul>
+      <li><a href="/bridal-alterations">Bridal Gown Alterations</a></li>
+      <li><a href="/preservation">Gown Preservation</a></li>
+      <li><a href="/heirloom-redesign">Heirloom Redesign</a></li>
+      <li><a href="/custom-formal">Custom Formal Wear</a></li>
+      <li><a href="/accessories">Lingerie &amp; Accessories</a></li>
+      <li><a href="/formalwear">Formalwear &amp; Steaming</a></li>
+    </ul></div>
+    <div class="f-col"><h4>About</h4><ul>
+      <li><a href="/about">Meet Carla</a></li>
+      <li><a href="/gallery">Our Work</a></li>
+      <li><a href="/#contact">Contact &amp; Location</a></li>
+      <li><a href="https://share.google/3UHxo2702ajDtmBLe" target="_blank" rel="noopener">Leave a Review</a></li>
+      <li><a href="https://bridesforacause.com" target="_blank" rel="noopener">Brides for a Cause</a></li>
+      <li><a href="https://sparklebridalcouture.com" target="_blank" rel="noopener">Sparkle Bridal Couture</a></li>
+    </ul></div>
+    <div class="f-col"><h4>Contact</h4><ul>
+      <li><a href="tel:+19168581310">(916) 858-1310</a></li>
+      <li><a href="mailto:keepsakesbridalsacramento&#64;gmail.com">Email Carla</a></li>
+      <li><a href="https://maps.google.com/?q=2893+Sunrise+Blvd+Rancho+Cordova+CA" target="_blank" rel="noopener">2893 Sunrise Blvd, Ste 211<br>Rancho Cordova, CA 95742</a></li>
+      <li style="margin-top:4px;"><span style="font-size:10px;color:rgba(255,255,255,0.35);font-style:italic;">&#9888; Search without suite # &mdash; West America Bank building</span></li>
+      <li><a href="/#contact">Free Consultation</a></li>
+    </ul></div>
   </div>
-  <div class="f-col"><h4>Services</h4><ul><li><a href="/bridal-alterations">Bridal Gown Alterations</a></li><li><a href="/preservation">Gown Preservation</a></li><li><a href="/heirloom-redesign">Heirloom Redesign</a></li><li><a href="/custom-formal">Custom Formal Wear</a></li><li><a href="/accessories">Lingerie &amp; Accessories</a></li><li><a href="/formalwear">Formalwear &amp; Steaming</a></li></ul></div>
-  <div class="f-col"><h4>About</h4><ul><li><a href="/about">Meet Carla</a></li><li><a href="/gallery">Our Work</a></li><li><a href="/#contact">Contact &amp; Location</a></li><li><a href="https://share.google/3UHxo2702ajDtmBLe" target="_blank" rel="noopener">Leave a Review</a></li></ul></div>
-  <div class="f-col"><h4>Contact</h4><ul><li><a href="tel:+19168581310">(916) 858-1310</a></li><li><a href="mailto:keepsakesbridalsacramento&#64;gmail.com">Email Carla</a></li><li><a href="https://maps.google.com/?q=2893+Sunrise+Blvd+Rancho+Cordova+CA" target="_blank" rel="noopener">2893 Sunrise Blvd, Ste 211<br>Rancho Cordova, CA 95742</a></li><li style="margin-top:4px;"><span style="font-size:10px;color:rgba(255,255,255,0.35);font-style:italic;">&#9888; Search without suite # &mdash; West America Bank building</span></li></ul></div>
-</div>
-<div class="f-areas-wrap"><span class="f-areas-label">Serving Brides Throughout Northern California</span>
-<div class="f-areas"><span class="f-area">Sacramento</span><span class="f-area">Rancho Cordova</span><span class="f-area">Elk Grove</span><span class="f-area">Roseville</span><span class="f-area">Rocklin</span><span class="f-area">Folsom</span><span class="f-area">El Dorado Hills</span><span class="f-area">Cameron Park</span><span class="f-area">Auburn</span><span class="f-area">Lincoln</span><span class="f-area">Granite Bay</span><span class="f-area">Citrus Heights</span><span class="f-area">Fair Oaks</span><span class="f-area">Carmichael</span><span class="f-area">Bay Area</span></div></div>
-<div class="f-bottom">
-  <div class="f-copy">&copy; 2025 Keepsakes Bridal Alterations &amp; Custom Designs &middot; Carla Westerbeck, Owner &middot; Est. 1994 &middot; Rancho Cordova, CA</div>
-  <div class="f-policy"><strong style="color:rgba(255,255,255,0.38);">Studio Policies:</strong> 50% deposit required at fitting. Balance due before gown returned. Deposits non-refundable. Gowns unpaid with no contact for 6 months may be sold.</div>
-</div></footer>
+  <div class="f-areas-wrap">
+    <span class="f-areas-label">Serving Brides Throughout Northern California</span>
+    <div class="f-areas">
+      <span class="f-area">Sacramento</span><span class="f-area">Rancho Cordova</span><span class="f-area">Elk Grove</span><span class="f-area">Roseville</span><span class="f-area">Rocklin</span><span class="f-area">Folsom</span><span class="f-area">El Dorado Hills</span><span class="f-area">Cameron Park</span><span class="f-area">Auburn</span><span class="f-area">Lincoln</span><span class="f-area">Granite Bay</span><span class="f-area">Citrus Heights</span><span class="f-area">Fair Oaks</span><span class="f-area">Carmichael</span><span class="f-area">Bay Area</span><span class="f-area">Davis</span><span class="f-area">Woodland</span><span class="f-area">Placerville</span>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <div class="f-copy">&copy; 2025 Keepsakes Bridal Alterations &amp; Custom Designs &middot; Carla Westerbeck, Owner &middot; Est. 1994 &middot; Rancho Cordova, CA</div>
+    <div class="f-policy"><strong style="color:rgba(255,255,255,0.38);">Studio Policies:</strong> 50% deposit required at fitting. Balance due before gown returned. Deposits non-refundable. Gowns unpaid with no contact for 6 months may be sold.</div>
+  </div>
+</footer>
 </body>
 </html>
